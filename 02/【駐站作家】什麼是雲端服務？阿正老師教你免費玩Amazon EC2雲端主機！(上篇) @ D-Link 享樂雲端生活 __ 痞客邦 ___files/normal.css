@@ -1,0 +1,918 @@
+/* dlinktwblog : Wed, 07 Nov 2018 16:58:25 +0800 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn, th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+pre{font-size: 1em ;}
+.article-content{ _height: 1% ;  overflow: hidden ;  _overflow: none;}
+.article-content p{margin-bottom: 1em;}
+.article-content li{list-style-type: disc; margin-left:20px;}
+.article-content ol li{list-style-type: decimal; margin-left:20px;}
+a {text-decoration: none;outline:none;}
+br{letter-spacing: normal;}
+
+/*--------------------------all setting*/
+
+HTML {
+SCROLLBAR-FACE-COLOR:  ;
+SCROLLBAR-HIGHLIGHT-COLOR: ;
+SCROLLBAR-SHADOW-COLOR: ;
+SCROLLBAR-3DLIGHT-COLOR:  ;
+SCROLLBAR-ARROW-COLOR: ;
+SCROLLBAR-TRACK-COLOR:  ;
+SCROLLBAR-DARKSHADOW-COLOR: ;
+overflow-x:;	}
+body {
+font-size:12px;
+font-family:arial, Century Gothic;
+line-height: 160%;
+background:#e9faff url(https://pic.pimg.tw/pixnetvisual/49dacf25b7d67.png) left top repeat-x;
+}
+#blog-main{}
+#article-main{}
+
+a {color:#333;}
+a:hover {color:#666;}
+
+#body-div{
+width: 900px;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf266edde.png) left top repeat-y;
+position: relative;
+margin:0 auto 20px;
+
+}
+
+/*--------------------------authority*/
+
+#authority{
+position:absolute;
+left: 0;
+top: 25px;
+z-index:9000;
+}
+#authority a{
+display:block;
+float: left;
+height: 20px;
+line-height: 20px;
+font-size: 12px;
+border:1px solid #a4deee;
+padding: 1px 5px 1px 25px;
+color:#5589a6;
+}
+#authority a#newpost {
+background:url(https://pic.pimg.tw/pixnetvisual/49d8d807c7bb1.png) 5px center no-repeat #bee4ef;
+margin-right:5px;
+}
+#authority a#backstage {
+background:url(https://pic.pimg.tw/pixnetvisual/49d8d8086694a.png) 5px center no-repeat #bee4ef;
+}
+#authority a:hover{
+color:#235e7f;
+border:1px solid #9acfde;
+}
+/*--------------------------container*/
+
+#container{}
+#container2{}
+#container3{}
+
+/*--------------------------header*/
+
+#header{
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf273c6a6.png) left top no-repeat;
+height: 190px;
+}
+#login-bar{
+position:absolute;
+right:0;
+top: 33px;
+color:#649fb1;
+}
+#login-bar a{color:#649fb1; padding:0px 1px}
+#login-bar a:hover{color:#333;}
+
+#banner{}
+#banner h1 a{
+position:absolute;
+top: 80px;
+left: 120px;
+font-size:16px;
+font-weight:bold;
+color:#235e7f;
+display:block;
+height: 20px;
+overflow:hidden;
+}
+#banner h1 a:hover{color:#fff;}
+#banner h2{
+position:absolute;
+top: 105px;
+left: 120px;
+color:#666;
+width: 450px;
+height: 45px;
+font-size:11px;
+line-height: 15px;
+overflow:hidden;
+}
+#banner .skiplink{display: none;}
+#banner #blog-category{
+color:#4d7b96;
+position:absolute;
+right: 20px;
+top: 125px;
+z-index:900;
+}
+#banner #blog-category a{color:#4d7b96;}
+#banner #blog-category a:hover{color:#fff;}
+
+/*--------------------------navigation*/
+
+#navigation{
+position:absolute;
+right:1px;
+top:156px;
+}
+#navigation li{
+float:left;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf294a496.png) left top no-repeat;
+height: 35px;
+padding:0px 10px;
+line-height: 30px;
+*line-height: 35px;
+}
+#navigation a{
+font-size:16px;
+color:#2e7eab;
+padding-left: 25px;
+}
+#navigation a:hover{
+color:#0f4253;
+}
+#navigation li#link-album a{background:url(https://pic.pimg.tw/pixnetvisual/49d8d80e04fbf.png) 3px 3px no-repeat;}
+#navigation li#link-blog a{background:url(https://pic.pimg.tw/pixnetvisual/49d8d80e64345.png) 3px 2px no-repeat;}
+#navigation li#link-guestbook a{background:url(https://pic.pimg.tw/pixnetvisual/49d8d80ed9f42.png) 3px 3px no-repeat;}
+#navigation li#link-profile a{background:url(https://pic.pimg.tw/pixnetvisual/49d8d80f8b846.png) 3px 3px no-repeat;}
+/*--------------------------main*/
+
+#main{
+overflow: hidden;
+_overflow: none;
+_height: 1%;
+}
+
+/*--------------------------content*/
+
+#content{
+overflow: hidden;
+float:left;
+width: 630px;
+padding-top: 10px;
+}
+
+#spotlight{
+width: 590px;
+margin:10px auto;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf48e08b3.png) left top repeat-y;
+}
+#spotlight h5{
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf48b2e25.png) left top no-repeat;
+height: 31px;
+padding-left: 10px;
+color:#2e7eab;
+font:bold 13px arial;
+line-height:30px;
+}
+#spotlight-text{
+padding: 10px;
+color:#369;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf493da6f.png) left bottom no-repeat;
+}
+
+#article-area{
+width: 590px;
+margin:0 auto;
+}
+
+#article-area .article-area-title{}
+#view-mode{}
+#display{}
+#display SPAN {}
+
+#article-box{}
+.article{
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.article-head{
+height: 39px;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf25546bf.png) left top no-repeat;
+position: relative;
+}
+.publish {
+font: 10px arial;
+text-transform: uppercase;
+color: #62c6d6;
+position: absolute;
+top: 5px;
+left: 5px;
+height:30px;
+width: 55px;
+overflow:hidden;
+text-align: right;
+}
+.publish .month,
+.publish .date{
+font-size:15px;
+font-weight: bold;
+font-family: Century gothic;
+letter-spacing: -0.05em;
+height:15px;
+color:#45aabb;
+}
+.publish .day,
+.publish .year{
+position:relative;
+top:-2px;
+}
+.publish .time{display:none;}
+.title{
+height: 20px;
+padding-top: 10px;
+margin-left: 80px;
+width: 470px;
+overflow:hidden;
+}
+.title a{
+font-size: 16px;
+font-weight:bold;
+color:#284762;
+}
+.title a:hover{color:#aaa;}
+.article-body{
+margin: 10px 0;
+}
+.article-body a{color:#369;}
+.article-body a:hover{color:#91b8c1;}
+
+.article-content{
+margin: 15px;
+font-size:13px;
+line-height: 170%;
+letter-spacing:0.05em;
+color:#444;
+}
+.article-content a{
+color:#222;
+border-bottom:1px dashed #91b8c1;
+padding-bottom:1px;
+}
+.bookmark,
+.author,
+.forward{
+text-align: right;
+color:#666;
+line-height:140%;
+}
+
+.article-footer{
+overflow:hidden;_overflow: none; _height: 1%;
+border-top: 1px dashed #ccc;
+padding-top:5px;
+color:#363636;
+line-height:140%;
+}
+.history{
+float: right;
+width: 290px;
+}
+.refer{
+float: left;
+width: 290px;
+}
+.back-to-top{
+clear: both;
+text-transform: uppercase;
+font: 10px Century Gothic;
+letter-spacing:0;
+text-align: right;
+}
+.back-to-top a{
+background:#aaa;
+padding: 0px 3px;
+line-height: 20px;
+color:#fff;
+}
+.back-to-top a:hover{
+background:#fff;
+color:#ccc;
+}
+/*--------------------------list*/
+
+
+.main-list {
+width: 590px;
+margin:10px auto;
+}
+.main-list table{
+width: 100%;
+margin: 10px auto;
+}
+.main-list h3 {}
+.main-list th{
+line-height: 25px;
+color:#fff;
+background:#91b8c1;
+border-bottom: 3px solid #fff;
+padding: 2px 5px;
+}
+.main-list td{
+font-size:11px; *font-size:10px;
+line-height: 25px;
+padding: 0px 10px;
+background:#eefbff;
+border-bottom:1px solid #91b8c1;
+}
+.main-list td a{color:#333;}
+.main-list td a:hover{color:#999;}
+.list-num{display:none;}
+td.list-date {
+font: 9px Tahoma;
+width: 50px;
+color:#000;
+letter-spacing:0;
+padding: 0 5px;
+}
+.list-title img{float: right;
+margin-left:3px;
+}
+#murmur-list td.list-date {
+padding: 5px;
+}
+.list-visit,
+.list-comment{
+width: 40px;
+}
+
+/*--------------------------post-box*/
+
+.user-post-box{}
+.user-post-title{
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf2874769.png) no-repeat;
+height: 25px;
+line-height: 25px;
+padding-left: 10px;
+color:#337f98;
+margin: 10px 0;
+}
+#trackback-box .user-post-title{}
+#comment-box .user-post-title{}
+
+.post-comment{
+width:90px;
+height: 25px;
+margin: 10px auto 20px;
+line-height: 25px;
+}
+#content .post-comment a{
+display:block;
+font-size:12px;
+color:#5589a6;
+height: 100%;
+padding-left: 25px;
+background:url(https://pic.pimg.tw/pixnetvisual/49d8d812ccfb6.png) 5px center no-repeat #d9efed;
+border:1px solid #a6d0de;
+}
+#content .post-comment a:hover{
+border:1px solid #74afc3;
+color:#285974;
+}
+
+.single-post{
+overflow: hidden;
+_overflow: none;
+_height: 1%;
+background:#e9faff;
+margin-bottom: 20px;
+padding-bottom: 10px;
+border:1px solid #caf2ff;
+}
+.post-info{
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf29acf4d.png) no-repeat;
+height:27px;
+font-size:11px; *font-size:10px;
+line-height: 27px;
+margin-bottom: 10px;
+color:#555;
+position:relative;
+padding-left: 55px;
+_padding-top: 5px;
+}
+.post-info img{
+vertical-align: middle;
+}
+.post-info .floor{
+width: 40px;
+height:25px;
+text-align: center;
+color:#fff;
+font: bold 13px Century Gothic;
+line-height:25px;
+display: block;
+position: absolute;
+left:0;
+top:0;
+}
+.post-photo{
+width: 95px;
+float: left;
+margin-left: 10px;
+display: inline;
+}
+.post-photo img{
+border:1px solid #ddd;
+}
+.post-text{
+float: right;
+width: 470px;
+margin-bottom: 5px;
+color:#000;
+}
+.reply-text{
+float: right;
+width: 405px;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf2a22174.png) 5px top no-repeat #fff;
+border:1px solid #dcf2f8;
+border-right:1px solid #c8e8f1;
+border-bottom:1px solid #c8e8f1;
+margin-right: 10px;
+display:inline;
+padding: 5px 5px 5px 50px;
+color:#777;
+min-height: 30px;
+_height: 30px;
+}
+.reply-text p{
+display:none;
+}
+.single-post.secret{
+background:url(https://pic.pimg.tw/pixnetvisual/4970225ac51bf.png) 5px top no-repeat #fff;
+border:1px solid #ccc;
+}
+.single-post.secret .post-text{
+float: none;
+width: auto;
+padding-left: 70px;
+font-size:0; color:#fff;
+}
+
+#trackback-box {}
+#trackback-box h3 {}
+#trackback-box SPAN {}
+#trackback-box #trackback-url{
+margin: 10px 0;
+}
+#trackback-box input{
+border:1px solid #dcf2f8;
+font:11px arial;
+padding:2px;
+margin-left:5px;
+background:#fff;
+color:#369
+}
+#trackback-box input#trackback-input{
+width: 350px;
+margin:0;
+padding:3px
+}
+#trackback-text {}
+#trackback-text .single-post {}
+#trackback-text .post-info {}
+#trackback-box  .post-text{
+width:auto ;
+float:none ;
+padding: 0 10px;
+}
+
+/*--------------------------comment-form */
+#comment-form {
+border:1px solid #dcf2f8;
+background:#e8f2f5;
+padding:  10px 5px;
+width: 580px;
+margin: 10px auto;
+}
+#comment-form p {
+color: #369;
+text-align: right;
+margin: 0px 10px 5px;
+}
+#comment-form table {
+width: 100%;
+border: none;
+}
+#comment-form table tr.comment-form-title { display: none; }
+#comment-form table td {
+color: #999;
+vertical-align: top;
+border: none;
+padding: 2px 5px;
+}
+#comment-form table th {
+color: #999;
+vertical-align: top;
+width: 70px;
+border: none;
+padding: 2px 5px;
+text-align:right;
+}
+#comment-form table th font { display: none; }
+#comment-form input {
+height: 17px;
+font-family: Arial;
+font-size: 11px;
+color: #000;
+border: none;
+border-bottom: 1px solid #ccc;
+background: none;
+width: 99%;
+}
+#comment-form input.radio {
+border: none; width: auto;	background: none;margin:0; padding:0;
+}
+#comment-form input#blogcommenttext_name{
+width: 95.5%;
+}
+#comment-form input#send-comment{
+background:#ccc;
+width: 100px;
+height: 20px;
+}
+#comment-form textarea {
+width: 99%;
+height: 90px;
+font-family: Arial;
+font-size: 11px;
+line-height: 18px;
+color: #000;
+border: 1px solid #ccc;
+background: #fff;
+}
+
+/*--------------------------pages*/
+
+.page{
+margin: 10px 0px;
+font-size:11px;
+font-family: Century Gothic;
+text-align: center;
+}
+.page a{
+margin: 0 5px;
+color:#555;
+padding: 0 3px;
+}
+.page a:hover,
+.page span{
+background:#eee;
+padding: 0 3px;
+color:#33;
+}
+
+/*--------------------------links*/
+
+#links{
+overflow: hidden;
+float:right;
+width: 268px;
+margin-right:1px;
+display:inline;
+}
+#links-row-1{}
+#links-row-2{}
+
+.box{
+margin: 15px 0
+}
+.box-title{
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf261737a.png) no-repeat;
+height:25px;
+padding: 5px 5px 0 35px;
+color:#4a8395;
+font-weight:bold;
+font-size:13px;
+}
+.box-text {
+padding:10px 0;
+color:#333;
+}
+.box-text a{color:#555;}
+.box-text a:hover{color:#000;}
+.box li{
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf28052b9.png) left bottom no-repeat;
+padding: 0 10px;
+line-height:220%;
+}
+.box h6{
+margin-left: 10px;
+line-height:200%;
+font-weight:bold;
+}
+.box-more{
+margin: 5px 10px;
+text-align:right;
+}
+.box-more a{
+border:1px solid #fff;
+border-right: 1px solid #b8deea;
+border-bottom:1px solid #b8deea;
+padding: 1px 3px;
+color:#8fc0d1;
+}
+.box-more a:hover{
+border:1px solid #b8deea;
+border-right: 1px solid #fff;
+border-bottom:1px solid #fff;
+}
+#box-ad .box-text,
+#hiiir .box-text,
+#boxevent_clubbroadcast .box-text,
+#archive .box-text,
+#favorite .box-text{
+margin: 0 15px;
+}
+#headshot {
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf27a4d4c.png) left top no-repeat;
+width: 250px;
+height:105px;
+margin: 15px auto;
+position: relative;
+}
+#headshot .box-title{
+background:none;
+padding: 0 0 0 30px;
+}
+#headshot .box-text{
+padding:0;
+margin:0;
+}
+#headshot ul{	}
+#headshot li{background:none;}
+#headshot li#headshot-img{
+background:none;
+width: 75px;
+line-height:0;
+padding:0;
+position: absolute;
+top: 15px;
+right:20px;
+}
+#headshot li#headshot-img img{
+width:70px;
+padding: 2px;
+border:1px solid #93d0cc;
+background:#d3f3f1;
+}
+#headshot li#friend-apply{
+position:absolute;
+top: 33px;
+left: 30px;
+}
+#headshot li#send-message{
+position:absolute;
+top: 60px;
+left:30px;
+}
+
+#recent-article{}
+#recent-article img{}
+
+#latest-comment {}
+#latest-comment a{}
+#latest-comment span{}
+
+#calendar{}
+#calendar table{
+width: 70%;
+margin: 0 auto;
+}
+#calendar th,
+#calendar td{
+color:#666;
+font: 11px Century Gothic;
+text-align: center;
+line-height: 20px;
+}
+#calendar td{
+padding: 2px 1px;
+
+}
+#calendar td a{
+display: block;
+padding: 0px 1px;
+background:#b2e4e1;
+color:#366;
+border-right:1px solid #93d0cc;
+border-bottom:1px solid #93d0cc;
+}
+
+#murmur{
+width: 250px;
+margin: 15px auto;
+background:#d3f3f1;
+position:relative;
+}
+#murmur .box-title{
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf28d6a77.png) left top no-repeat;
+height:35px;
+padding:0 0 0 27px;
+}
+#murmur .box-text{
+margin:0;
+padding: 5px 0;
+_height:1%;
+}
+#murmur .box-text li{
+background:none;
+}
+.murmur-time{
+position: absolute;
+left:15px;
+top:  17px;
+font: 10px Century Gothic;
+color:#7ebeba;
+}
+.murmur-text{
+padding: 10px !important;
+line-height:150% !important;
+}
+
+#visitor,
+#crumb{}
+#visitor ul,#crumb ul{
+overflow: hidden;
+_overflow: none;
+_height: 1%;
+margin:5px 15px;
+}
+#visitor li,#crumb li{
+float: left;
+margin: 0px 2px 2px 0;
+display:inline;
+line-height:0;
+padding:0;
+background:0;
+}
+#visitor li img,
+#crumb li img {
+width: 50px;
+height: 50px;
+}
+#visitor .box-more,
+#crumb .box-more{
+margin-top: 10px;
+}
+#broadcast{}
+#broadcast ul{
+overflow: hidden;
+_overflow: none;
+_height: 1%;
+padding-bottom: 3px;
+margin-bottom: 5px;
+padding: 0px 15px 7px 15px;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf28052b9.png) left bottom no-repeat;
+}
+#broadcast li{
+background:0;
+padding:0;
+}
+#broadcast .broadcast-photo{
+float: left;
+line-height:0;
+}
+#broadcast .broadcast-time{
+float: right;
+width: 185px;
+line-height: 20px;
+}
+#broadcast .broadcast-time a{}
+#broadcast .broadcast-time span{}
+#broadcast .broadcast-text{
+float: right;
+width: 185px;
+height: 20px;
+line-height: 20px;
+overflow: hidden;
+}
+#search{}
+#search ul{
+overflow: hidden;
+_overflow: none;
+_height: 1%;
+margin: 0px 15px;
+}
+#search li{
+float: left;
+background:none;
+padding:0;
+}
+#search li input{
+border:1px solid #a6d4d1;
+font:12px arial;
+margin-right: 5px;
+line-height: 20px;
+padding:2px;
+}
+#search input#search-target{}
+#search input#search-submit{
+padding:1px;
+width: 50px;
+color:#369;
+background:#d3f3f1;
+}
+
+#feed {}
+#announce{}
+#hot-article {}
+
+#category {}
+#category h6{color:#369}
+#category ul{margin-bottom: 5px;}
+#category .box-more {}
+
+
+#archive select {}
+#archive li a{}
+
+#latest-trackback {}
+#latest-trackback a{}
+#latest-trackback span{}
+
+#subscription{}
+#subscription a{}
+#subscription span{}
+
+#favorite select {}
+
+#mylink {}
+#mylink .inner-box{margin-bottom: 5px;}
+#mylink .inner-box h6{color:#369}
+#mylink .inner-box li{}
+
+#counter{}
+#counter SPAN{}
+
+#latest-comment li,
+#subscription li,
+#latest-trackback li{
+line-height: 150%;
+padding: 3px 10px;
+}
+#latest-comment a,
+#latest-trackback a,
+#subscription a{
+display: block;
+width: 99%;
+}
+.folder{}
+.folder .box-title{}
+.folder .box-text{
+margin: 0px 10px;
+}
+
+#powered{}
+
+/*--------------------------footer*/
+
+#footer{
+clear:both;
+background:url(https://pic.pimg.tw/pixnetvisual/49dacf26c48d8.png) left 0px no-repeat;
+padding: 20px 10px 0 10px;
+height: 50px;
+text-align:center;
+border-top: 0;
+}
+#footer p{color:#369;}
+#bottom {}
+
+
+/*--------------------------extradiv*/
+
+#extradiv11{}
+#extradiv10{}
+#extradiv9{}
+#extradiv8{}
+#extradiv7{}
+#extradiv6{}
+#extradiv5{}
+#extradiv4{}
+#extradiv3{}
+#extradiv2{}
+#extradiv1{}
+#extradiv0{}

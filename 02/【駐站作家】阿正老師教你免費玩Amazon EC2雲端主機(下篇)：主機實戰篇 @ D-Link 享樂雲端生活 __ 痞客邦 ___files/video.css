@@ -1,0 +1,638 @@
+.u-mib-non-visible {
+    visibility: hidden;
+}
+
+body.freeze-video-ad {
+    padding-top: 320px;
+}
+#mib-video-expander {
+    position: relative;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    background: url('images/linen-bg.png') repeat-x;
+    z-index: 1;
+}
+
+/* #49309: 移除 videojs 預設給的黑色背景 */
+#links .video-js.video-js {
+    background-color: transparent;
+}
+
+.video-js .vjs-progress-control.vjs-progress-control {
+    display: none;
+}
+
+/* loading 圓圈 */
+.vjs-loading-spinner.vjs-loading-spinner {
+    position: absolute;
+    margin: -25px 0 0 -25px;
+    /* IE 11 不支援 initial, auto 可解但 Safari 不支援, 只能寫死最小寬度 */
+    min-width: 38px;
+}
+
+.mib-video-background {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -512px;
+    width: 1024px;
+    height: 0px;
+    box-shadow: inset 0 0 10px #000000;
+}
+.falcon-ad-container {
+    cursor: pointer;
+}
+.falcon-ad-container a {
+    display: block;
+}
+#falcon-video-player.falcon-video-player--center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#falcon-video-player.falcon-video-player--left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#falcon-video-player.falcon-video-player--right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.falcon-video--big-ratio .falcon-video-player--big-ad-left {
+    left: 50px;
+}
+.falcon-video--big-ratio .falcon-video-player--big-ad-right {
+    right: 15px;
+}
+.falcon-video--big-ratio .falcon-video-player--normal-ad-left {
+    left: 32px;
+}
+.falcon-video--big-ratio .falcon-video-player--normal-ad-right {
+    right: 32px;
+}
+
+.falcon-video--small-ratio .falcon-video-player--big-ad-left {
+    left: 114px;
+}
+.falcon-video--small-ratio .falcon-video-player--big-ad-right {
+    right: 79px;
+}
+.falcon-video--small-ratio .falcon-video-player--normal-ad-left {
+    left: 80px;
+}
+.falcon-video--small-ratio .falcon-video-player--normal-ad-right {
+    right: 80px;
+}
+
+.falcon-video-background {
+    border: none;
+    pointer-events: none;
+}
+.mib-container {
+    height: 100%;
+    margin: auto;
+}
+.mib-container .adsbygoogle {
+    margin: 0;
+}
+.mib-video-container {
+    padding: 12px;
+    margin-left: 38px;
+    width: 384px;
+    height: 288px;
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+/** 隱藏白金影音廣告的播放鍵, 避免還沒開始播放時會出現按鈕, #54197 **/
+.mib-video-container .video-js .vjs-big-play-button { opacity: 0; }
+.mib-video-container--html-background {
+    position: absolute;
+    top: 2px;
+}
+.mib-widescreen {
+    width: 512px;
+}
+.mib-left {
+}
+.mib-right{
+    float: right;
+    margin-right: 0px;
+}
+.mib-centered {
+    margin: 0 auto;
+}
+.mib-centered.mib-video-container--html-background {
+    left: 23.5%;
+}
+.mib-right.mib-video-container--html-background {
+    right: 3px;
+}
+
+.mib-video-close {
+    border: 1px solid #666;
+    display: none;
+    position: absolute;
+}
+#mib-video-expander .mib-video-close a {
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 7px 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    opacity: 0.5;
+}
+#mib-video-expander .mib-video-close a:hover {
+    opacity: 0.8;
+}
+.mib-video-close-top-right {
+    top: 20px;
+    right: 20px;
+}
+.mib-video-close-bottom-right {
+    right: 20px;
+    bottom: 50px;
+}
+.mib-video-close-top-left {
+    top: 20px;
+    left: 20px;
+}
+.mib-video-close-bottom-left {
+    bottom: 50px;
+    left: 20px;
+}
+#mib-video-expander.freeze,
+#mib-video-expander.freeze .mib-video-background {
+    position: fixed;
+    top: 45px;
+    z-index: 100000000;
+}
+#mib-video-expander.freeze {
+    width: 100%;
+}
+#mib-video-expander.freeze .mib-video-background {
+    background-position: fixed;
+}
+
+/* 全螢幕功能鍵 */
+.video-js .vjs-fullscreen-control.vjs-control {
+    position: absolute;
+    right: 0;
+}
+
+/* MIB 側欄特開影音背板容器 */
+.mib-sidebarvideo-container--html-background {
+    position: relative;
+    left: 0;
+    max-width: 180px;
+}
+
+/* HTML5 背板 iframe */
+.mib-sidebarvideo-container--html-background > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* #47431 MIB 側欄特開影音背板 */
+.mib__video-player-background {
+    width: 180px;
+    height: 280px;
+}
+
+/* MIB 側欄特開影音 video tag */
+.mib__video-player--sidebar > video.vjs-tech {
+    z-index: 1;
+    width: 180px;
+    min-height: 135px;
+    height: 180px;
+    margin-top: 0;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* MIB 側欄影音播放按鈕 */
+div.mib__video-player-btn-play {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: unset;
+}
+
+.mib__video-player-btn-play div {
+    min-width: unset;
+}
+
+.mib__video-player-btn-play .mib__video-player-btn-play__button {
+    animation: heartbeat 1s infinite;
+    display: inline-block;
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    min-width: unset;
+}
+.mib__video-player-btn-play .mib__video-player-btn-play__button.mib__video-player-btn-play__button-is-play {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    min-width: unset;
+}
+.mib__video-player-btn-play .mib__video-player-btn-play__button.mib__video-player-btn-play__button-is-play .mib__video-player-btn-play-outer-circle {
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    min-width: unset;
+}
+.mib__video-player-btn-play .mib__video-player-btn-play__button.mib__video-player-btn-play__button-is-play .mib__video-player-btn-play__button-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    min-width: unset;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.mib__video-player-btn-play .mib__video-player-btn-play__button.mib__video-player-btn-play__button-is-play .mib__video-player-btn-play__button-icon .mib__video-player-btn-play__button-icon-triangle {
+    -webkit-animation: fadeIn 7s ease;
+            animation: fadeIn 7s ease;
+}
+.mib__video-player-btn-play .mib__video-player-btn-play__button.mib__video-player-btn-play__button-is-play .mib__video-player-btn-play__button-icon .mib__video-player-btn-play__button-icon-path {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 0;
+    -webkit-animation: triangleStroke 3s;
+            animation: triangleStroke 3s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@-webkit-keyframes triangleStroke {
+    from {
+      stroke-dashoffset: 90;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+@keyframes triangleStroke {
+    from {
+      stroke-dashoffset: 90;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes smallScale {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      opacity: 0;
+    }
+}
+@keyframes smallScale {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      opacity: 0;
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform:scale(0.8,0.8);
+        opacity:1;
+    }
+    25% {
+        transform:scale(1,1);
+        opacity:0.8;
+    }
+    100% {
+        transform:scale(0.8,0.8);
+        opacity:1;
+    }
+}
+
+.mib__video-player-btn-play .mib__video-player-btn-play__countdown {
+    display: block;
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    margin-left: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    min-width: unset;
+}
+
+.mib__video-player-btn-play .mib__video-player-btn-play__countdown-number {
+    color: #fff;
+    display: inline-block;
+    line-height: 50px;
+    min-width: unset;
+    text-align: center;
+    font-size: 24px;
+}
+
+.mib__video-player-btn-play svg.mib__video-player-btn-play__circle {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+    min-width: unset;
+}
+
+.mib__video-player-btn-play svg.mib__video-player-btn-play__circle circle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #f857a6;
+    fill: none;
+    animation: countdown 3s linear infinite forwards;
+}
+
+@keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 113px;
+    }
+}
+/* 隱藏不需要的播放器控制功能元件 */
+.vjs-time-divider.vjs-time-divider,
+.vjs-live-controls.vjs-control,
+.vjs-current-time.vjs-time-controls.vjs-control,
+.vjs-duration.vjs-time-controls.vjs-control,
+.mib__video-player--sidebar .vjs-fullscreen-control.vjs-control {
+    display: none;
+}
+
+/* 非自動播放時顯示的播放鍵 */
+.mib__video-player--sidebar.vjs-default-skin > .vjs-big-play-button {
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-left: -22px;
+    margin-top: -11px;
+    font-size: 1.5em;
+}
+
+/* 覆蓋以前 MIB 側欄圖像廣告的最小寬度 */
+.vjs-volume-control.vjs-control,
+.vjs-volume-control.vjs-control div,
+.vjs-mute-control.vjs-control {
+    min-width: initial;
+}
+
+/* 改回被地圖砲影響到的所有控制項 div 的 min-width */
+.vjs-control-bar.vjs-control-bar div {
+    min-width: auto;
+}
+
+/* 播放器控制選單切齊影片底部 */
+.mib__video-player--sidebar.vjs-default-skin .vjs-control-bar {
+    bottom: 1px;
+    z-index: 2;
+}
+
+/* 音量鍵 */
+.mib__video-player--sidebar .vjs-mute-control.vjs-control {
+    width: 1em;
+}
+
+/* 音量滑動控制器 */
+.mib__video-player--sidebar.vjs-default-skin .vjs-volume-control {
+    width: 6.2em;
+}
+
+/* 音量滑動控制器 hover */
+.mib__video-player--sidebar.vjs-default-skin .vjs-menu-button-inline:hover {
+    width: 10em;
+}
+/* 音量滑動控制器 hover 時子容器位置 */
+.mib__video-player--sidebar .vjs-menu-button-inline:hover .vjs-menu {
+    left: 2.5em;
+}
+
+/* 剩餘秒數容器 */
+.mib__video-player--sidebar .vjs-remaining-time.vjs-time-control {
+    padding-left: 0;
+}
+/* 剩餘秒數 */
+.mib__video-player--sidebar .vjs-remaining-time-display {
+    line-height: 3;
+}
+
+/* 影音展開按鈕 */
+.mib__video-player-btn-expand.mib__video-player-btn-expand {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+    width: 44px;
+    height: 19px;
+    min-width: 44px;
+    cursor: pointer;
+}
+/* 影音展開按鈕 hover */
+.mib__video-player-btn-expand.mib__video-player-btn-expand:hover {
+    background: url(../../module/mib/img/btn-expend--hover.png);
+}
+
+/* 全螢幕 85% 黑底遮罩 */
+.mib-fullscreen-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10000001;
+    background-color: rgba(0, 0, 0, .85);
+}
+
+/* 側開影音展開後置中的容器 */
+.mib__popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 304px;
+    max-width: 960px;
+    min-height: 540px;
+    max-height: 540px;
+    background-color: #000;
+    transform: translate(-50%, -50%);
+}
+
+/* 側開影音展開後 video tag */
+.mib__popup video.vjs-tech {
+    object-fit: fill;
+    cursor: pointer;
+}
+
+/* 側開影音展開後的關閉按鈕 */
+.mib-popup__close {
+    position: absolute;
+    right: 0;
+    top: -2.2em;
+    cursor: pointer;
+}
+
+/***** 文中影音廣告 #52067 *****/
+.mib-article-video-expander {
+    position: relative;
+    margin: 30px auto;
+    display: none;
+    width: 592px;
+    background-color: #ececec;
+}
+.mib-article-video-container {
+    position: relative;
+    padding: 12px 40px 40px;
+    height: auto;
+    overflow: hidden;
+    opacity: 0;
+}
+.mib-article-video-container--show { opacity: 1; }
+
+/* 下方痞字 icon */
+.mib-article-video-container > .mib--ad-box__icon {
+    right: 40px;
+    bottom: 10px;
+}
+/* 播放結束時影片上的黑色遮罩 */
+.mib-article-video-layer {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -256px;
+    width: 512px;
+    height: 288px;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+.mib-article-video-layer.mib-article-video-layer--ended {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* 播放結束後影片上的按鈕區塊 */
+.mib-article-video-btn-block {
+    margin-top: 93px;
+    margin-left: 150px;
+}
+/* 播放結束後影片上的按鈕 */
+.mib-article-video-btn {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.mib-article-video-btn:focus { outline: 0; }
+.article-content .mib-article-video-btn > p {
+    margin-top: 90px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* 再看一次按鈕 */
+.mib-article-video-btn--replay {
+    background-image: url(/images/mib/btn_replay.png);
+    background-repeat: no-repeat;
+}
+/* 瞭解更多按鈕 */
+.mib-article-video-btn--more {
+    margin-left: 100px;
+    background-image: url(/images/mib/btn_more.png);
+    background-repeat: no-repeat;
+}
+
+/* 音量按鈕樣式 */
+.mib-article-video-player.video-js .vjs-volume-menu-button {
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+.mib-article-video-player.video-js .vjs-volume-menu-button.vjs-vol-1::before,
+.mib-article-video-player.video-js .vjs-volume-menu-button.vjs-vol-2::before,
+.mib-article-video-player.video-js .vjs-volume-menu-button.vjs-vol-3::before {
+    content: "";
+    background-image: url(/images/mib/volumn-on.png);
+    background-repeat: no-repeat;
+}
+
+.mib-article-video-player.video-js .vjs-volume-menu-button.vjs-vol-0::before {
+    content: "";
+    background-image: url(/images/mib/volumn-off.png);
+    background-repeat: no-repeat;
+}
+
+/* 全螢幕按鈕 */
+.mib-article-video-player.video-js .vjs-fullscreen-control.vjs-control { display: none; }
+
+/* 廣告贊助文字 */
+.article-content .mib-video-container--article__p {
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-align: left;
+    color: #4a4a4a;
+}
+/* 廣告播放按鈕 */
+.mib-article-video-player.video-js .vjs-big-play-button { display: none; }

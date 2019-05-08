@@ -1,0 +1,114 @@
+#article-main .article-content .author-profile {
+    margin: 50px 0;
+}
+
+#article-main .article-content .author-profile a {
+    position: initial;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+#article-main .article-content .author-profile__header {
+    color: #666;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1em;
+}
+
+#article-main .article-content .author-profile__main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 10px;
+    padding: 25px;
+    border-radius: 3px;
+    overflow: auto;
+    background-color: #f6f6f6;
+}
+
+#article-main .article-content .author-profile__avatar {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 0 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#article-main .article-content .author-profile__name {
+    color: #006ac6;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+#article-main .article-content .author-profile__content {
+    float: left;
+    width: calc(100% - 240px);
+    max-width: 500px;
+}
+
+#article-main .article-content .author-profile__content:last-child {
+    width: calc(100% - 100px);
+    max-width: none;
+}
+
+#article-main .article-content .social-links {
+    height: 20px;
+    margin-top: 8px;
+    font-size: 0;
+}
+
+#article-main .article-content .author-profile .social-link {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 17px;
+    overflow: hidden;
+}
+
+#article-main .article-content .social-link__icon {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#article-main .article-content .social-link:hover .social-link__icon {
+    opacity: .8;
+}
+
+#article-main .article-content .author-profile__info {
+    display: block;
+    max-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: #6e7071;
+    font-size: 14px;
+    line-height: 1.25;
+    letter-spacing: .9px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#article-main .author-profile .author-profile__subscribe {
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 80px;
+    border-left: 1px solid #cecece;
+}
+
+#article-main .author-profile .author-profile__subscribe .subscribe-btn {
+    position: absolute;
+    top: 50%;
+    left: initial;
+    bottom: initial;
+    right: 0;
+    transform: translateY(-50%);
+}
